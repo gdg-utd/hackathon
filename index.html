@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#d2e3fc">
+    <meta name="description" content="HackGDG is a student hackathon hosted by Google Developer Groups at UT Dallas in March 2027.">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>HackGDG 2027 · UT Dallas</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="48x48 256x256">
+    <link rel="icon" href="./brand/gdg-favicon-16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./brand/gdg-favicon-32.png" type="image/png" sizes="32x32">
+  </head>
+  <body>
+    <main>
+      <section class="landing" id="home" aria-labelledby="site-title">
+        <div class="landscape" aria-hidden="true">
+          <div class="horizon"><img src="./art/desert.png" alt="" width="793" height="436"></div>
+        </div>
+
+        <header class="masthead">
+          <a class="brand" href="#home" aria-label="HackGDG home">
+            <img src="./art/gdg.png" alt="" width="80" height="40">
+          </a>
+          <nav class="site-nav" aria-label="Main navigation">
+            <a href="#home" aria-current="location">Home</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#faq">FAQ</a>
+            <a href="#hackerpack">Hackerpack</a>
+          </nav>
+          <div class="account-nav" role="group" aria-label="Account">
+            <button type="button" disabled title="Login coming soon">Log in</button>
+            <a class="signup" href="#registration">Sign up</a>
+          </div>
+        </header>
+
+        <div class="hero-title">
+          <p class="event-date">
+            <time datetime="2027-03">March 2027</time>
+            <span class="date-divider" aria-hidden="true"></span>
+            <span>UT Dallas</span>
+          </p>
+          <h1 class="wordmark" id="site-title">
+            <span class="visually-hidden">HackGDG</span>
+            <img src="./art/hack.png" alt="" width="33" height="9">
+            <img src="./art/gdg-type.png" alt="" width="25" height="9">
+          </h1>
+        </div>
+
+        <div class="sky-scene">
+          <div class="sky-art">
+            <img class="sky-sun" src="./art/sun.png" alt="" width="708" height="291" fetchpriority="high">
+            <div class="sky-dino" aria-hidden="true"></div>
+            <img class="sky-clouds" src="./art/clouds.png" alt="" width="708" height="291">
+            <button class="dino-trigger" type="button" aria-label="Surprise the dinosaur"></button>
+            <span id="dino-status" class="visually-hidden" role="status"></span>
+          </div>
+        </div>
+        <a class="explore-link" href="#about">Explore the site <span aria-hidden="true"></span></a>
+      </section>
+
+      <div class="jurassic-world">
+        <section class="canyon motion-scene" id="about" aria-labelledby="about-title">
+          <div class="world-motes" aria-hidden="true">
+            <i style="--x: 7%; --y: 62%; --delay: -1s"></i>
+            <i style="--x: 23%; --y: 38%; --delay: -4s"></i>
+            <i style="--x: 51%; --y: 49%; --delay: -2s"></i>
+            <i style="--x: 68%; --y: 67%; --delay: -5s"></i>
+            <i style="--x: 82%; --y: 42%; --delay: -3s"></i>
+            <i style="--x: 94%; --y: 72%; --delay: -6s"></i>
+          </div>
+          <div class="section-shell canyon-layout">
+            <div class="canyon-copy" data-reveal>
+              <h2 id="about-title">What is<br>HackGDG?</h2>
+              <p class="canyon-lead">A student hackathon at UT Dallas. Come build something from scratch with other student makers.</p>
+              <p>Try a new tool, meet people who like figuring things out, and share what you made. Hosted by Google Developer Groups at UT Dallas.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="basin motion-scene">
+          <div class="original-woodland" aria-hidden="true">
+            <img class="original-canopy" src="./art/original-canopy.png" alt="" width="1439" height="450" loading="lazy">
+            <img class="original-tree" src="./art/original-tree.png" alt="" width="1440" height="1268" loading="lazy">
+          </div>
+          <div class="world-motes" aria-hidden="true">
+            <i style="--x: 8%; --y: 41%; --delay: -3s"></i>
+            <i style="--x: 18%; --y: 83%; --delay: -5s"></i>
+            <i style="--x: 44%; --y: 31%; --delay: -1s"></i>
+            <i style="--x: 60%; --y: 68%; --delay: -7s"></i>
+            <i style="--x: 78%; --y: 88%; --delay: -2s"></i>
+            <i style="--x: 91%; --y: 52%; --delay: -4s"></i>
+          </div>
+          <section class="section-shell event-section" aria-labelledby="event-title">
+            <div class="event-banner" data-reveal>
+              <div>
+                <p class="event-location"><span aria-hidden="true"></span> UT Dallas</p>
+                <h2 id="event-title">See you in March.</h2>
+              </div>
+              <p class="event-note">March 2027 <span>Exact dates coming soon</span></p>
+            </div>
+            <div class="resource-grid" data-reveal>
+              <section class="resource-panel" id="schedule" aria-labelledby="schedule-title">
+                <div class="resource-heading">
+                  <h3 id="schedule-title">Schedule</h3>
+                  <span class="availability">Coming soon</span>
+                </div>
+                <p>Check-in, event times, and project deadlines.</p>
+              </section>
+              <section class="resource-panel" id="hackerpack" aria-labelledby="hackerpack-title">
+                <div class="resource-heading">
+                  <h3 id="hackerpack-title">Hackerpack</h3>
+                  <span class="availability">Coming soon</span>
+                </div>
+                <p>What to bring, how teams work, and resources to get started.</p>
+              </section>
+            </div>
+          </section>
+
+          <section class="section-shell faq-section" id="faq" aria-labelledby="faq-title">
+            <div class="faq-intro" data-reveal>
+              <h2 id="faq-title">Frequently asked questions</h2>
+              <p>Planning your first HackGDG? Start here.</p>
+            </div>
+            <div class="faq-panel" data-reveal>
+              <details>
+                <summary>When and where is HackGDG?</summary>
+                <p>HackGDG is planned for March 2027 at UT Dallas. We’ll post the exact dates, room, and check-in details on this page.</p>
+              </details>
+              <details>
+                <summary>What happens at a hackathon?</summary>
+                <p>You pick a problem or idea, build a project in a set amount of time, and share what you made. A small prototype is a great place to start.</p>
+              </details>
+              <details>
+                <summary>Do I need coding experience?</summary>
+                <p>Design, research, testing, and presenting are all ways to contribute to a project. You can start with the skills you already have.</p>
+              </details>
+              <details>
+                <summary>Do I need a team or an idea ahead of time?</summary>
+                <p>You can start brainstorming on your own. The Hackerpack will explain team sizes and how to meet other participants.</p>
+              </details>
+              <details>
+                <summary>When can I sign up?</summary>
+                <p>We’ll publish the registration link and deadlines here as soon as they’re available.</p>
+              </details>
+            </div>
+          </section>
+        </div>
+
+        <div class="closing-scene motion-scene">
+          <div class="original-closing" aria-hidden="true">
+            <img class="original-cloud" src="./art/original-cloud.png" alt="" width="1440" height="1389" loading="lazy">
+          </div>
+          <div class="world-motes" aria-hidden="true">
+            <i style="--x: 8%; --y: 16%; --delay: -4s"></i>
+            <i style="--x: 17%; --y: 66%; --delay: -2s"></i>
+            <i style="--x: 42%; --y: 78%; --delay: -5s"></i>
+            <i style="--x: 74%; --y: 83%; --delay: -3s"></i>
+            <i style="--x: 91%; --y: 39%; --delay: -1s"></i>
+          </div>
+          <section class="section-shell sponsor-section" id="sponsors" aria-labelledby="sponsors-title" data-reveal>
+            <h2 id="sponsors-title">Sponsors</h2>
+            <p>Sponsor announcements are coming soon.</p>
+          </section>
+
+          <section class="section-shell registration-section" id="registration" aria-labelledby="registration-title">
+            <div class="registration-ticket" data-reveal>
+              <div class="ticket-main">
+                <h2 id="registration-title">HackGDG registration</h2>
+                <p>Sign-ups are coming soon. Check back here for the registration link and deadline.</p>
+              </div>
+              <div class="ticket-stub">
+                <time datetime="2027-03">March 2027</time>
+                <span>UT Dallas</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <img class="original-meadow" src="./art/original-meadow.png" alt="" width="1440" height="333" loading="lazy">
+      <div class="section-shell footer-inner">
+        <a class="footer-brand" href="https://gdgutd.com/">
+          <img src="./art/gdg.png" alt="" width="80" height="40">
+          <span>GDG at UT Dallas</span>
+        </a>
+        <nav class="footer-socials" aria-label="GDG social links">
+          <a href="https://discord.gg/bYNaQbaTQh" target="_blank" rel="noreferrer">
+            <img src="./icons/discord.svg" alt="" width="16" height="16"> Discord
+          </a>
+          <a href="https://www.instagram.com/gdg.utd/" target="_blank" rel="noreferrer">
+            <img src="./icons/instagram.svg" alt="" width="16" height="16"> Instagram
+          </a>
+          <a href="https://linktr.ee/gdgutd" target="_blank" rel="noreferrer">
+            <img src="./icons/linktree.svg" alt="" width="16" height="16"> Linktree
+          </a>
+        </nav>
+        <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+    <script defer src="./src/gsap.min.js"></script>
+    <script defer src="./src/ScrollTrigger.min.js"></script>
+    <script defer src="./src/main.js"></script>
+  </body>
+</html>

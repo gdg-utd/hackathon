@@ -1,0 +1,14 @@
+{
+  "name": "hackgdg",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/site.mjs --serve",
+    "build": "node scripts/site.mjs",
+    "preview": "node scripts/site.mjs --preview"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1"
+  }
+}
